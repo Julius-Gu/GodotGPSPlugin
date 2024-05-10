@@ -45,7 +45,7 @@ var gps_provider
 
 func _ready():
   #The rest of your startup code goes here as usual
-  get_tree().on_request_permissions_result.connect(perm_check)
+  get_tree().on_request_permissions_result.connect(permCheck)
   
   #NOTE: OS.request_permissions() should be called from a button the user actively touches after being informed of 
   #what the button will enable.  This is placed in _ready() only to indicate this must be called, and how to structure
